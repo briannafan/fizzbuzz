@@ -1,0 +1,36 @@
+<script>
+// 1-100
+// if the number is divisible by 3, console.log("fizz")
+// if the number is divisible by 5, console.log("buzz")
+// if both, console.log("fizzbuzz")
+
+function three (x) {
+	return x % 3;
+}
+
+function five (x) {
+	return x % 5;
+}
+
+for (x = 1; x <= 100; x++){
+
+	var r = three(x);
+	var rt = five(x);
+	if (r == 0){
+		if (rt == 0){
+			console.log("fizzbuzz");
+		}
+		else{
+			console.log("fizz");
+		}
+	}
+
+	if (r != 0){
+		if (rt == 0){
+			console.log("buzz");
+		}
+	}
+
+}
+
+</script>
